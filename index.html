@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enciclopedia - Inspirada en Wikipedia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="logo">
+      <div class="mark">E</div>
+      <div>
+        <div><strong>Enciclopedia</strong></div>
+        <div style="font-size: 13px; color: var(--muted);">Inspirada en Wikipedia</div>
+      </div>
+    </a>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <main class="container">
+    <article class="article">
+      <h1>Título del Artículo</h1>
+      <p>Este es un ejemplo de artículo. Puedes editarlo y añadir tu propio contenido, secciones, imágenes o enlaces.</p>
+
+      <h2>Historia</h2>
+      <p>Esta sección describe los orígenes o el desarrollo del tema. Añade aquí información relevante.</p>
+
+      <h2>Características</h2>
+      <p>Incluye aquí detalles, propiedades o aspectos importantes del tema.</p>
+
+      <section class="comments">
+        <h2>💬 Comentarios</h2>
+        <form id="commentForm" class="comment-form">
+          <input type="text" id="name" placeholder="Tu nombre" required>
+          <br>
+          <textarea id="message" placeholder="Escribe un comentario..." required></textarea>
+          <br>
+          <button type="submit">Publicar</button>
+        </form>
+
+        <div id="commentList"></div>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  </html>
